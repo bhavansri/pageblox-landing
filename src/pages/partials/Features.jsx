@@ -1,10 +1,5 @@
 import React, { useEffect } from 'react';
 
-import Illustration from '../../../public/images/features-illustration.svg';
-import FeaturesIcon01 from '../../../public/images/drag-and-drop.svg';
-import FeaturesIcon02 from '../../../public/images/comment.svg';
-import FeaturesIcon03 from '../../../public/images/complex-web-design.svg';
-
 // Import Swiper
 import Swiper, { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
@@ -45,7 +40,7 @@ function Features() {
     <section className="relative">
       {/* Bg illustration */}
       <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none -mt-20 -z-10" aria-hidden="true">
-        <Image src={Illustration} className="max-w-none" width="1440" height="440" alt="Illustration" />
+        <img src='/images/features-illustration.svg' className="max-w-none" width="1440" height="440" alt="Illustration" />
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
@@ -65,7 +60,7 @@ function Features() {
             <div className="swiper-wrapper">
               {/* Carousel items */}
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon01} width="56" height="56" alt="Icon 01" />
+                <Image className="mb-3" src='/images/drag-and-drop.svg' width="56" height="56" alt="Icon 01" />
                 <div className="grow">
                   <div className="font-hkgrotesk font-bold text-xl">Drag & drop review environment</div>
                   <div className="text-slate-500 mb-3 mt-2">
@@ -80,7 +75,7 @@ function Features() {
                 </div>
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon02} width="56" height="56" alt="Icon 02" />
+                <Image className="mb-3" src='/images/comment.svg' width="56" height="56" alt="Icon 02" />
                 <div className="grow">
                   <div className="font-hkgrotesk font-bold text-xl">Collaborate on reviews real-time</div>
                   <div className="text-slate-500 mb-3 mt-2">
@@ -95,7 +90,7 @@ function Features() {
                 </div>
               </div>
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
-                <Image className="mb-3" src={FeaturesIcon03} width="56" height="56" alt="Icon 03" />
+                <Image className="mb-3" src='/images/complex-web-design.svg' width="56" height="56" alt="Icon 03" />
                 <div className="grow">
                   <div className="font-hkgrotesk font-bold text-xl">Designed for complex web apps.</div>
                   <div className="text-slate-500 mb-3 mt-2">

@@ -1,15 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Illustration from '../../../public/images/hero-illustration.svg';
-import HeroImage from '../../../public/images/pageblox-demo-gif.gif';
-
 function Hero() {
   return (
     <section className="relative">
       {/* Illustration */}
       <div className="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
-        <Image src={Illustration} className="max-w-none" width="1440" height="1265" alt="Hero Illustration" />
+        <Image src='/images/hero-illustration.svg' priority={true} className="max-w-none" width="1440" height="1265" alt="Hero Illustration" />
       </div>
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 md:pt-40">
@@ -43,7 +40,7 @@ function Hero() {
           </div>
           {/* Hero image */}
           <div className="pt-16 md:pt-20" data-aos="fade-up" data-aos-delay="300">
-            <Image className="mx-auto object-contain rounded-lg" src={HeroImage} width="920" height="518" alt="Hero" />
+            <img className="mx-auto object-contain rounded-lg" src='/images/pageblox-demo-gif.gif' width="920" height="518" alt="Hero" />
           </div>
         </div>
       </div>

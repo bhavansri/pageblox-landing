@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Logo from '../../../public/images/pageblox-logo.svg';
 import Image from 'next/image';
 
 function Header() {
@@ -12,7 +11,7 @@ function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link className="flex items-center gap-5" href="/" aria-label="Cruip">
-              <Image src={Logo} height={35} width={35} />
+              <img src='/images/pageblox-logo.svg' height={35} width={35} />
               <h2 className='h5 font-inter uppercase font-bold'>Pageblox</h2>
             </Link>
           </div>
