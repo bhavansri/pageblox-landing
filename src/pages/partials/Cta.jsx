@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import Illustration from '../../../public/images/cta-illustration.svg';
@@ -19,22 +20,22 @@ function Cta() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-            <h2 className="h2 font-hkgrotesk">Just $7/month to get beta access</h2>
+            <h2 className="h2 font-hkgrotesk">Just $10/month for beta access</h2>
           </div>
           {/* Buttons */}
           <div className="text-center">
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div data-aos="fade-up" data-aos-delay="100">
-                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://srinathanbhavan.typeform.com/to/Z0GQDcyN" target="_blank" rel="noopener noreferrer">
+                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup" target="_blank" rel="noopener noreferrer">
                   Get Started {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </Link>
               </div>
               <div data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
-                  Read Docs
+                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://demo.pageblox.io" target="_blank" rel="noopener noreferrer">
+                  Try Now
                 </a>
               </div>
             </div>

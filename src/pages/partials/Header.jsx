@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 function Header() {
   return (
@@ -20,8 +19,8 @@ function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="ml-3">
-                <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://demo.pageblox.io" target="_blank" rel="noopener noreferrer">
-                  View Playground {' '}
+                <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
+                  Read the docs {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
