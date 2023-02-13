@@ -17,7 +17,7 @@ function Hero() {
               Code reviews for UX/UI changes
             </h1>
             <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-              {`Simple annotation tool for commenting, reviewing, and collaborating on front-end changes directly in the app.`}
+              {`Collaborative annotation tool for reviewing front-end changes directly on your browser.`}
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -41,7 +41,7 @@ function Hero() {
           </div>
           {/* Hero image */}
           <div className="pt-16 md:pt-20" data-aos="fade-up" data-aos-delay="300">
-            <img className="mx-auto object-contain rounded-lg" src='/images/pageblox-demo-gif.gif' width="920" height="518" alt="Hero" />
+            <img className="mx-auto object-contain rounded-lg" src='/images/pageblox-demo.gif' width="850" height="500" alt="demo gif" />
           </div>
         </div>
       </div>

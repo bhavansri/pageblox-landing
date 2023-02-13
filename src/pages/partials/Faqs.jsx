@@ -24,7 +24,7 @@ function Faqs() {
               <div className="space-y-2">
                 <h4 className="text-xl font-hkgrotesk font-medium">How much does it cost to use?</h4>
                 <p className="text-slate-500">
-                  We currently charge users $7/month to get an API key and use the SDK in projects.
+                  We currently charge users $10/month to get an API key and use the SDK in projects.
                 </p>
               </div>
             </div>

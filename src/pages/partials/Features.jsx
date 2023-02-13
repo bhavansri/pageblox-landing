@@ -47,10 +47,12 @@ function Features() {
           {/* Section header */}
           <div className="flex items-center pb-12 md:pb-20">
             <h2 className="h2 font-hkgrotesk mb-4 w-1/2">Simplify your <br/> review workflow</h2>
-            <div className="w-1/2">
-              <p className="text-lg text-slate-300">
-                The current team workflows for reviewing UX/UI code changes is a convoluted process involving multiple tools & communication channels - resulting in launch delays, poor documentation, and uncaught bugs.
-                Pageblox solves this by offering a simple interface directly on the app, so stakeholders can engage in an effortless, high-quality review process.
+            <div className="w-1/2 text-lg text-slate-300">
+              <p>
+                Reviewing front-end changes is a time intensive & error prone process - resulting in launch delays, poor documentation, and uncaught bugs.
+              </p>
+              <p className='mt-5'>
+                Pageblox solves this by bringing the review process directly to the browser, so stakeholders can simplify their workflow and give high-quality feedback.
               </p>
             </div>
           </div>
