@@ -24,7 +24,12 @@ function Faqs() {
               <div className="space-y-2">
                 <h4 className="text-xl font-hkgrotesk font-medium">How much does it cost to use?</h4>
                 <p className="text-slate-500">
-                  We currently charge users $10/month to get an API key and use the SDK in projects.
+                  We currently charge users $10/month to get an API key and use the SDK in projects. Once you purchase a key, there's no limitations on users or projects you can use it for.
+                </p>
+              </div><div className="space-y-2">
+                <h4 className="text-xl font-hkgrotesk font-medium">Will you support mobile?</h4>
+                <p className="text-slate-500">
+                  Mobile support will be a fast follow feature, after we perfect the desktop experience.
                 </p>
               </div>
             </div>
@@ -41,7 +46,13 @@ function Faqs() {
               <div className="space-y-2">
                 <h4 className="text-xl font-hkgrotesk font-medium">Are any integrations supported?</h4>
                 <p className="text-slate-500">
-                  Integrations with workplace tools like Jira, Linear, and Github will be built as fast follow features for our beta customers.
+                  Not yet! Integrations with Linear, Jira, Github actions, and Slackbots are custom integrations we'll get done for our beta customers.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-xl font-hkgrotesk font-medium">Is there any refund policies for using the product?</h4>
+                <p className="text-slate-500">
+                  We offer full money back guarantee in the first 60 days, and you can end your monthly subscription anytime.
                 </p>
               </div>
             </div>

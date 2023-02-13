@@ -32,10 +32,15 @@ function Hero() {
                   </span>
                 </Link>
               </div>
-              <div>
+              <div className='hidden sm:block'>
                 <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://demo.pageblox.io/?review_mode=true" target="_blank" rel="noopener noreferrer">
-                  Try Now
+                  Try Now on Desktop
                 </a>
+              </div>
+              <div className='block sm:hidden'>
+                <p className='btn block sm:hidden text-slate-300 bg-slate-700 border-slate-600 w-full shadow-sm'>
+                  Try Now on Desktop
+                </p>
               </div>
             </div>
           </div>

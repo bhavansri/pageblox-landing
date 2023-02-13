@@ -31,7 +31,8 @@ function SignUp() {
                 {/* Left side */}
                 <div className="grow lg:mt-20 mb-12 lg:mb-0 flex flex-col items-center lg:items-start">
                   {/* Headline */}
-                  <h1 className="h2 font-hkgrotesk mb-8 text-center lg:text-left">Get beta access for $10/month</h1>
+                  <h1 className="h2 font-hkgrotesk mb-5 text-center lg:text-left">Get beta access for $10/month</h1>
+                  <p className='mb-8 text-gray-400 italic text-lg'>60-day full money back guarantee, cancel your subscription anytime.</p>
                   {/* List */}
                   <ul className="inline-flex flex-col text-lg text-slate-200 space-y-3">
                   <li>
@@ -42,9 +43,6 @@ function SignUp() {
                     </li>
                     <li>
                       <span>💡 We work closely with you to build fast follow solutions</span>
-                    </li>
-                    <li>
-                      <span>🤝 60-day full money back guarantee, cancel subscription anytime.</span>
                     </li>
                   </ul>
                 </div>
