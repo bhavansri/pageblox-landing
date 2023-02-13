@@ -34,7 +34,7 @@ function Cta() {
                 </Link>
               </div>
               <div data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://demo.pageblox.io" target="_blank" rel="noopener noreferrer">
+                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://demo.pageblox.io/?review_mode=true" target="_blank" rel="noopener noreferrer">
                   Try Now
                 </a>
               </div>
