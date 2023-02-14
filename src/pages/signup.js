@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { addDoc, collection } from 'firebase/firestore';
+import { database } from '../utils/firebase-config';
 
 function SignUp() {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    console.log(firstName, lastName, email, message)
+    await addDoc(collection(database, "signups"), {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      message: message
+    })
+
+    setSubmitted(true)
+  }
+
   return (
     <div className="flex flex-col min-h-screen overflow-hidden font-inter antialiased text-slate-200 tracking-tight">
       {/* Site header */}
@@ -53,42 +75,50 @@ function SignUp() {
                   <div className="p-6 md:p-8">
                     <div className="font-hkgrotesk text-xl font-bold mb-6">Let's talk</div>
                     {/* Form */}
-                    <form>
+                    <form onSubmit={handleSubmit}>
                       <div className="space-y-4">
                         <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                           <div className="sm:w-1/2">
                             <label className="block text-sm text-slate-400 font-medium mb-1" htmlFor="name">
                               First Name <span className="text-rose-500">*</span>
                             </label>
-                            <input id="name" className="form-input text-sm py-2 w-full" type="text" required />
+                            <input id="name" value={firstName} onChange={(e) => { setFirstName(e.target.value) }} className="form-input text-sm py-2 w-full" type="text" required />
                           </div>
                           <div className="sm:w-1/2">
-                            <label className="block text-sm text-slate-400 font-medium mb-1" htmlFor="surname">
+                            <label className="block text-sm text-slate-400 font-medium mb-1" htmlFor="lastname">
                               Last Name <span className="text-rose-500">*</span>
                             </label>
-                            <input id="surname" className="form-input text-sm py-2 w-full" type="text" required />
+                            <input id="lastname" value={lastName} onChange={(e) => { setLastName(e.target.value) }} className="form-input text-sm py-2 w-full" type="text" required />
                           </div>
                         </div>
                         <div>
                           <label className="block text-sm text-slate-400 font-medium mb-1" htmlFor="email">
                             Email <span className="text-rose-500">*</span>
                           </label>
-                          <input id="email" className="form-input text-sm py-2 w-full" type="email" required />
+                          <input id="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className="form-input text-sm py-2 w-full" type="email" required />
                         </div>
                         <div>
                           <label className="block text-sm text-slate-400 font-medium mb-1" htmlFor="message">
                             Message <span className="text-rose-500">*</span>
                           </label>
-                          <textarea id="message" className="form-textarea text-sm py-2 w-full" rows="4" required />
+                          <textarea id="message" value={message} onChange={(e) => { setMessage(e.target.value) }} className="form-textarea text-sm py-2 w-full" rows="4" required />
                         </div>
                       </div>
                       <div className="mt-6">
-                        <button className="btn-sm text-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group">
-                          Send Message{' '}
-                          <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                            -&gt;
-                          </span>
-                        </button>
+                        {
+                          submitted ?
+                            <button className='btn-sm text-sm text-white bg-green-500 hover:bg-green-600 w-full shadow-sm group'>
+                              Submitted!
+                            </button> :
+                            <button type="submit" className="btn-sm text-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group">
+                              Send Message{' '}
+                              <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                                -&gt;
+                              </span>
+                            </button>}
+                        {submitted && <p className='text-gray-400 w-full text-sm mt-2'>
+                          Thanks! We'll be in touch with you shortly.
+                        </p> }
                       </div>
                     </form>
                   </div>
