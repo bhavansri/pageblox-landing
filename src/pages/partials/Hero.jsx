@@ -12,12 +12,12 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 md:pt-40">
           {/* Hero content */}
-          <div className="max-w-45l mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h1 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
-              Code reviews for UX/UI changes
+              Collaboration tool for reviewing <br/> web development
             </h1>
             <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-              {`Collaborative annotation tool for reviewing front-end changes directly on your browser.`}
+              {`React SDK that allows product teams to review code completions directly in the browser`}
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
