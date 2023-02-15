@@ -14,7 +14,7 @@ function Hero() {
           {/* Hero content */}
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
-              UX/UI reviews for web changes
+              UX/UI review tool for code changes
             </h1>
             <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
               {`React SDK that allows product stakeholders to review UX/UI changes directly in the app`}
