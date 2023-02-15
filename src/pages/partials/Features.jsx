@@ -49,7 +49,7 @@ function Features() {
             <h2 className="h2 font-hkgrotesk mb-4 w-1/2">Simplify your <br/> review workflow</h2>
             <div className="w-1/2 text-lg text-slate-300">
               <p>
-                Reviewing front-end changes is a time intensive & error prone process - resulting in launch delays, poor documentation, and uncaught bugs.
+                Reviewing UX/UI changes is hard. It's a time intensive & error prone process - resulting in launch delays, poor documentation, and uncaught bugs.
               </p>
               <p className='mt-5'>
                 Pageblox solves this by bringing the review process directly to the browser, so stakeholders can simplify their workflow and give high-quality feedback.
