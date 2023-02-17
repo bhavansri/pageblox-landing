@@ -46,7 +46,7 @@ function Hero() {
           </div>
           {/* Hero image */}
           <div className="pt-16 md:pt-20" data-aos="fade-up" data-aos-delay="300">
-            <img className="mx-auto object-contain rounded-lg" src='/images/pageblox-demo.gif' width="850" height="500" alt="demo gif" />
+            <img className="mx-auto object-contain rounded-lg" src='/images/pageblox-demo.gif' alt="demo gif" />
           </div>
         </div>
       </div>
