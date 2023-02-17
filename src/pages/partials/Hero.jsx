@@ -14,10 +14,10 @@ function Hero() {
           {/* Hero content */}
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
-              UX/UI review tool for code changes
+              Collaborate on product reviews easily
             </h1>
             <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-              {`React SDK that allows product stakeholders to review UX/UI changes directly in the app`}
+              {`A developer tool for product teams to manage UX/UI feedback on code changes`}
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
