@@ -24,6 +24,7 @@ export default function Home() {
     <>
       <Head>
         <title>Pageblox</title>
+        <meta name="title" property="og:title" content="Pageblox - UX/UI code reviews for product teams"></meta>
         <meta name="image" property="og:image" content="/images/pageblox-og.png"></meta>
         <meta name="description" property="og:description" content="A developer tool for product teams to manage UX/UI feedback on code changes"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
