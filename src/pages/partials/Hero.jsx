@@ -17,7 +17,7 @@ function Hero() {
               Collaborate on UX/UI reviews easily
             </h1>
             <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-              {`A developer tool for product teams to manage UX/UI feedback on code changes`}
+              A developer tool for annotating UX/UI feedback directly on code changes
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
