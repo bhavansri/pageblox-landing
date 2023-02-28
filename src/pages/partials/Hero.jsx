@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { usePageblox } from 'pageblox-react';
 
 function Hero() {
+  const { setEnabledPageblox } = usePageblox()
+
   return (
     <section className="relative">
       {/* Illustration */}
@@ -24,23 +27,23 @@ function Hero() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div>
-                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup" target="_blank" rel="noopener noreferrer">
-                  Get Started {' '}
-                  <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                    -&gt;
-                  </span>
-                </Link>
-              </div>
               <div className='hidden sm:block'>
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://demo.pageblox.io/?review_mode=true" target="_blank" rel="noopener noreferrer">
+                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 border-slate-600 w-full shadow-sm" onClick={() => { setEnabledPageblox(true) }}>
                   Try Now on Desktop
                 </a>
               </div>
               <div className='block sm:hidden'>
-                <p className='btn block sm:hidden text-slate-300 bg-slate-700 border-slate-600 w-full shadow-sm'>
+                <p className='btn block sm:hidden text-white bg-indigo-500 border-slate-600 w-full shadow-sm'>
                   Try Now on Desktop
                 </p>
+              </div>
+              <div>
+                <Link className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 w-full shadow-sm group" href="/signup" target="_blank" rel="noopener noreferrer">
+                  Get Beta Access {' '}
+                  <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                    -&gt;
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
