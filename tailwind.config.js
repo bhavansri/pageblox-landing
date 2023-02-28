@@ -3,7 +3,7 @@ module.exports = {
   content: [
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
-    "../pageblox-react/**/*.js"
+    "./node_modules/pageblox-react/**/*.js"
   ],
   theme: {
     extend: {
