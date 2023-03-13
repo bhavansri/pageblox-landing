@@ -2,19 +2,16 @@ import React, { useEffect } from 'react';
 import hljs from 'highlight.js';
 
 const markdown = `
-  import { usePageblox } from 'pageblox-react'
-  
-  function MyApp() {
-    const { reviewMode, createComment } = usePageblox()
-    
+  import { PagebloxDndProvider } from 'pageblox-react'
+  import 'pageblox-react/dist/index.css'
+
+  export default function App({ Component, pageProps }) {
     return (
-      <div onDoubleClick={createComment}>
-        <h1>You're viewing in { reviewMode ? 'Review Mode' : 'Browse Mode' }</h1>
-      </div>
+      <PagebloxDndProvider clientId="playgroundKey">
+        <Component {...pageProps} />
+      </PagebloxDndProvider>
     )
   }
-  
-  export default MyApp
 `;
 
 function Integrations() {
