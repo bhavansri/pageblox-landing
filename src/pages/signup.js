@@ -53,8 +53,8 @@ function SignUp() {
                 {/* Left side */}
                 <div className="grow lg:mt-20 mb-12 lg:mb-0 flex flex-col items-center lg:items-start">
                   {/* Headline */}
-                  <h1 className="h2 font-hkgrotesk mb-5 text-center lg:text-left">Get beta access for $7/month</h1>
-                  <p className='mb-8 text-gray-400 italic text-lg'>60-day full money back guarantee, cancel your subscription anytime.</p>
+                  <h1 className="h2 font-hkgrotesk mb-5 text-center lg:text-left">Install Pageblox for free today!</h1>
+                  <p className='mb-8 text-gray-400 italic text-lg'>30-day trial, full money-back guarantee. $7/month once the trial concludes.</p>
                   {/* List */}
                   <ul className="inline-flex flex-col text-lg text-slate-200 space-y-3">
                   <li>

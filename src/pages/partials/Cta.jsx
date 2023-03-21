@@ -20,7 +20,7 @@ function Cta() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-            <h2 className="h2 font-hkgrotesk">Just $7/month for beta access</h2>
+            <h2 className="h2 font-hkgrotesk">Get beta access today for free.</h2>
           </div>
           {/* Buttons */}
           <div className="text-center">
