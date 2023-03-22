@@ -4,6 +4,7 @@ import Illustration from '../../../public/images/features-illustration-02.svg';
 import Workflow from '../../../public/images/workflow.svg';
 import ProductDesign from '../../../public/images/design-product.svg';
 import WebDevelopment from '../../../public/images/web-development.svg';
+import Freelancer from '../../../public/images/freelance-icon.svg';
 import Image from 'next/image';
 
 const CategoryImage = ({ category }) => {
@@ -14,6 +15,8 @@ const CategoryImage = ({ category }) => {
       return <Image src={ProductDesign} className="md:max-w-none p-5" width="300" height="320" alt="Product Design Icon" />
     case '3':
       return <Image src={WebDevelopment} className="md:max-w-none p-5" width="300" height="320" alt="Web Development Icon" />
+    case '4':
+      return <Image src={Freelancer} className="md:max-w-none p-5" width="350" height="330" alt="Freelancer Icon" />
   }
 }
 
@@ -69,6 +72,14 @@ function Features02() {
                     >
                       Engineers
                     </button>
+                    <button
+                      className={`btn-sm px-3 py-1 shadow-sm rounded-full m-1.5 ${
+                        category === '4' ? 'text-white bg-indigo-500' : 'text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600'
+                      }`}
+                      onClick={() => setCategory('4')}
+                    >
+                      Freelancers
+                    </button>
                   </div>
                 </div>
                 {/* Content */}
@@ -95,6 +106,14 @@ function Features02() {
                       A typical product review process costs many hours and prevents the developer from merging their code to production.
                       <br /><br />
                       With a simplified review workflow, developers can get fast turnaround on feedback and ensure they meet the next release cycle.
+                    </div>
+                  </div>
+                  <div className={`${category !== '4' && 'hidden'}`}>
+                    <h3 className="h3 font-hkgrotesk mb-2">Communicate changes with clients hassle-free</h3>
+                    <div className="text-lg text-slate-500">
+                      Showing off work to clients and collecting feedback is difficult with timezone differences, e-mail, and managing spreadsheets.
+                      <br /><br />
+                      Instead, clients can leave their specific design feedback directly on your work as you iterate on development.
                     </div>
                   </div>
                 </div>
