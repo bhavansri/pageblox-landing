@@ -26,7 +26,7 @@ function Hero() {
               data-aos-delay="200"
             >
               <div className='hidden sm:block'>
-                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 border-slate-600 w-full shadow-sm">
+                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 border-slate-600 w-full shadow-sm" href="https://www.pageblox.io/?pageblox_enabled=true">
                   Try Now on Desktop
                 </a>
               </div>
