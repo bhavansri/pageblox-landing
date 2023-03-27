@@ -8,7 +8,7 @@ import 'pageblox-react/dist/index.css'
 
 export default function App({ Component, pageProps }) {
   return (
-    <PagebloxProvider clientId="playgroundKey">
+    <PagebloxProvider projectId="maX1fU1LnwiquM4vAPZy">
       <Component {...pageProps} />
     </PagebloxProvider>
   )
