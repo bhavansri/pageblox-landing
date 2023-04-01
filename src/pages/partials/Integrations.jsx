@@ -7,7 +7,7 @@ const markdown = `
 
   export default function App({ Component, pageProps }) {
     return (
-      <PagebloxDndProvider clientId="playgroundKey">
+      <PagebloxDndProvider projectId="playgroundKey">
         <Component {...pageProps} />
       </PagebloxDndProvider>
     )

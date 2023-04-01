@@ -36,7 +36,7 @@ function Hero() {
                 </p>
               </div>
               <div>
-                <Link className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 w-full shadow-sm group" href="/signup" target="_blank" rel="noopener noreferrer">
+                <Link className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 w-full shadow-sm group" href="/contact" target="_blank" rel="noopener noreferrer">
                   Get Beta Access {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
