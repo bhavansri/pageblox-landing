@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { addDoc, collection } from 'firebase/firestore';
 import { database } from '../utils/firebase-config';
 
-function SignUp() {
+function Contact() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
@@ -13,7 +13,6 @@ function SignUp() {
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    console.log(firstName, lastName, email, message)
     await addDoc(collection(database, "signups"), {
       firstName: firstName,
       lastName: lastName,
@@ -132,4 +131,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Contact;
