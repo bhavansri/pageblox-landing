@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { usePageblox } from 'pageblox-react';
 
 function Hero() {
+  const { onEnablePageblox } = usePageblox()
 
   return (
     <section className="relative">
@@ -26,7 +28,7 @@ function Hero() {
               data-aos-delay="200"
             >
               <div className='hidden sm:block'>
-                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 border-slate-600 w-full shadow-sm" href="https://www.pageblox.io/?pageblox_enabled=true">
+                <a className="btn text-white bg-indigo-500 hover:bg-indigo-600 border-slate-600 w-full shadow-sm" onClick={() => { onEnablePageblox(true) }}>
                   Try Now on Desktop
                 </a>
               </div>

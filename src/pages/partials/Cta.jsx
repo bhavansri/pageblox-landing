@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { usePageblox } from 'pageblox-react';
 
 import Illustration from '../../../public/images/cta-illustration.svg';
 
 function Cta() {
+  const { onEnablePageblox } = usePageblox()
+
   return (
     <section className="relative border-t border-slate-800">
       {/* Bg gradient: top */}
@@ -34,7 +37,7 @@ function Cta() {
                 </Link>
               </div>
               <div className='hidden sm:block' data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="https://www.pageblox.io/?pageblox_enabled=true">
+                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" onClick={() => { onEnablePageblox(true) }}>
                   Try Now on Desktop
                 </a>
               </div>
