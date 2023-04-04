@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { usePageblox } from 'pageblox-react';
 import * as ga from '../../lib/google-analytics'
+import Modal from '../components/Modal';
 
 function Hero() {
+  const [showModal, setShowModal] = useState(false)
   const { onEnablePageblox } = usePageblox()
 
   const onBetaAccess = (event) => {
@@ -18,10 +20,17 @@ function Hero() {
       action: "try-now"
     })
 
+    setShowModal(true)
+  }
+
+  const onModalClose = (event) => {
+    setShowModal(false)
     onEnablePageblox(true)
   }
 
   return (
+    <>
+      <Modal showModal={showModal} onModalClose={onModalClose} />
     <section className="relative">
       {/* Illustration */}
       <div className="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
@@ -68,7 +77,8 @@ function Hero() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      </>
   );
 }
 
