@@ -1,13 +1,29 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import Script from "next/script";
 import { PagebloxProvider } from "pageblox-react";
+import * as ga from "../lib/google-analytics";
 import "pageblox-react/dist/index.css";
 import "@/styles/globals.css";
 import "aos/dist/aos.css";
 import "../styles/style.css";
 import "../styles/dracula.css";
-import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
   const excludePathsList = ["/login", "/register"];
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
