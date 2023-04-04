@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { usePageblox } from 'pageblox-react';
 import * as ga from '../../lib/google-analytics'
 
 import Illustration from '../../../public/images/cta-illustration.svg';
+import Modal from '../components/Modal';
 
 function Cta() {
+  const [showModal, setShowModal] = useState(false)
   const { onEnablePageblox } = usePageblox()
 
   const onBetaAccess = (event) => {
@@ -20,10 +22,17 @@ function Cta() {
       action: "try-now"
     })
 
+    setShowModal(true)
+  }
+
+  const onModalClose = (event) => {
+    setShowModal(false)
     onEnablePageblox(true)
   }
 
   return (
+    <>
+    <Modal showModal={showModal} onModalClose={onModalClose} />
     <section className="relative border-t border-slate-800">
       {/* Bg gradient: top */}
       <div
@@ -65,7 +74,8 @@ function Cta() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      </>
   );
 }
 
