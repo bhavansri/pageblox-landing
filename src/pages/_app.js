@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
       <PagebloxProvider
         projectId="maX1fU1LnwiquM4vAPZy"
         excludePaths={excludePathsList}
-        demoMode={true}
+        demoMode={false}
       >
         <Component {...pageProps} />
       </PagebloxProvider>
