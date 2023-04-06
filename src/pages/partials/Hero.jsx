@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import { usePageblox } from 'pageblox-react';
 import * as ga from '../../lib/google-analytics'
 import Modal from '../components/Modal';
+import { useRouter } from 'next/router';
 
 function Hero() {
   const [showModal, setShowModal] = useState(false)
-  const { onEnablePageblox } = usePageblox()
+  const { onTryPageblox } = usePageblox()
 
   const onBetaAccess = (event) => {
     ga.event({
@@ -25,7 +26,8 @@ function Hero() {
 
   const onModalClose = (event) => {
     setShowModal(false)
-    onEnablePageblox(true)
+
+    onTryPageblox()
   }
 
   return (

@@ -9,7 +9,7 @@ import Modal from '../components/Modal';
 
 function Cta() {
   const [showModal, setShowModal] = useState(false)
-  const { onEnablePageblox } = usePageblox()
+  const { onTryPageblox } = usePageblox()
 
   const onBetaAccess = (event) => {
     ga.event({
@@ -27,7 +27,8 @@ function Cta() {
 
   const onModalClose = (event) => {
     setShowModal(false)
-    onEnablePageblox(true)
+    
+    onTryPageblox()
   }
 
   return (
