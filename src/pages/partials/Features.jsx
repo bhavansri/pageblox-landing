@@ -99,7 +99,7 @@ function Features() {
                 <div className="grow">
                   <div className="font-hkgrotesk font-bold text-xl">Designed with complexity in mind.</div>
                   <div className="text-slate-500 mb-3 mt-2">
-                    Handles routing, SPAs & server-side, CSR & SSR, nested UI elements, and more.
+                    Handles routing, SPAs & server-side, CSR & SSR, nested UI elements, and more!
                   </div>
                 </div>
                 <div className="text-right">
