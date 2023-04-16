@@ -1,7 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
+import * as ga from '../../lib/google-analytics'
 
 function Header() {
+
+  const onBetaAccess = (event) => {
+    ga.event({
+      action: "get-beta-access"
+    })
+  }
+
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -19,12 +27,12 @@ function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="ml-3">
-                <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
-                  Read the docs {' '}
+                <Link className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/contact" target="_blank" rel="noopener noreferrer" onClick={onBetaAccess}>
+                  Get Started Free {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

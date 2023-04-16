@@ -1,39 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { usePageblox } from 'pageblox-react';
+import React from 'react';
 import * as ga from '../../lib/google-analytics'
 
 import Illustration from '../../../public/images/cta-illustration.svg';
-import Modal from '../components/Modal';
 
 function Cta() {
-  const [showModal, setShowModal] = useState(false)
-  const { onTryPageblox } = usePageblox()
-
   const onBetaAccess = (event) => {
     ga.event({
       action: "get-beta-access"
     })
   }
 
-  const onTryNow = (event) => {
-    ga.event({
-      action: "try-now"
-    })
-
-    setShowModal(true)
-  }
-
-  const onModalClose = (event) => {
-    setShowModal(false)
-    
-    onTryPageblox()
-  }
-
   return (
     <>
-    <Modal showModal={showModal} onModalClose={onModalClose} />
     <section className="relative border-t border-slate-800">
       {/* Bg gradient: top */}
       <div
@@ -55,21 +35,16 @@ function Cta() {
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div data-aos="fade-up" data-aos-delay="100">
                 <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/contact" target="_blank" rel="noopener noreferrer" onClick={onBetaAccess}>
-                  Get Beta Access {' '}
+                  Get Started Free {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
                 </Link>
               </div>
-              <div className='hidden sm:block' data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm cursor-pointer" onClick={onTryNow}>
-                  Try Now on Desktop
+              <div data-aos="fade-up" data-aos-delay="200">
+                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm cursor-pointer" href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
+                  Read Docs
                 </a>
-              </div>
-              <div className='block sm:hidden' data-aos="fade-up" data-aos-delay="200">
-                <p className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm cursor-pointer">
-                  Try Now on Desktop
-                </p>
               </div>
             </div>
           </div>
