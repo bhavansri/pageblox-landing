@@ -45,15 +45,18 @@ function Features() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="flex items-center pb-12 md:pb-20">
-            <h2 className="h3 md:h2 font-hkgrotesk mb-4 w-1/2">Simplify your <br/> review workflow</h2>
+          <div className="flex items-start justify-between pb-12 md:pb-20">
+            <div className='w-1/2 text-slate-300 pr-5'>
+              <h2 className="h3 md:h2 font-hkgrotesk mb-4">Accelerate your UX/UI review workflows</h2>
+              <p className="text md:text-lg text-slate-400">
+                Reviewing UX/UI changes is hard. It's an inefficient process that often results in launch delays & uncaught buggy code. 
+              </p>
+              <p className="text md:text-lg text-slate-400 mt-5">
+                Pageblox solves this by creating a single review interface, reducing the back-and-forth in the review process between stakeholders and developers.
+              </p>
+            </div>
             <div className="w-1/2 text-md md:text-lg text-slate-300">
-              <p>
-                Reviewing UX/UI changes is hard. It's a time intensive & error prone process - resulting in launch delays, poor documentation, and uncaught bugs.
-              </p>
-              <p className='mt-5'>
-                Pageblox solves this by bringing the review process directly to the browser, so stakeholders can simplify their workflow and give high-quality feedback.
-              </p>
+              <img src='/images/pageblox-demo.gif' width="100%" height="100%" alt="Pageblox Demo" />
             </div>
           </div>
           {/* Carousel built with Swiper.js [https://swiperjs.com/] */}
@@ -94,9 +97,9 @@ function Features() {
               <div className="swiper-slide h-auto flex flex-col bg-slate-800 p-6 rounded">
                 <Image className="mb-3" src='/images/complex-web-design.svg' width="56" height="56" alt="Icon 03" />
                 <div className="grow">
-                  <div className="font-hkgrotesk font-bold text-xl">Designed for complex web apps.</div>
+                  <div className="font-hkgrotesk font-bold text-xl">Designed with complexity in mind.</div>
                   <div className="text-slate-500 mb-3 mt-2">
-                    Built for a single surface, and complex surfaces with hidden components (i.e. Dropdowns/Modals)
+                    Handles routing, SPAs & server-side, CSR & SSR, nested UI elements, and more.
                   </div>
                 </div>
                 <div className="text-right">

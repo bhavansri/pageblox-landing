@@ -21,9 +21,9 @@ function Hero() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 md:pt-40">
           {/* Hero content */}
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h1 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
-                Ship code with faster UX/UI iterations
+                Ship features with faster UX/UI iterations
             </h1>
               <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
                 React SDK to collaborate on UX/UI reviews in the browser
