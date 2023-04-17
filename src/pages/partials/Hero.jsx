@@ -34,7 +34,7 @@ function Hero() {
               data-aos-delay="200"
             >
               <div>
-                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/contact" onClick={onBetaAccess} target="_blank" rel="noopener noreferrer">
+                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup" onClick={onBetaAccess} target="_blank" rel="noopener noreferrer">
                   Get Started Free {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
