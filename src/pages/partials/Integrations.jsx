@@ -32,7 +32,7 @@ function Integrations() {
               Turn your app into a reviewable interface with just a couple lines of code.
             </p>
             <div className="sm:text-left text-center">
-              <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
+              <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="https://github.com/pageblox-org/pageblox-react" target="_blank" rel="noopener noreferrer">
                 Read the Docs {' '}
                 <span className="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
               </a>

@@ -26,7 +26,7 @@ function Hero() {
                 Ship features with faster UX/UI iterations
             </h1>
               <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-                Open-source react library to collaborate on UX/UI reviews in the browser
+                Open-source react library to review UX/UI code changes in the browser
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -42,7 +42,7 @@ function Hero() {
                 </Link>
               </div>
               <div>
-                <a className='btn block sm:hidden text-white bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm cursor-pointer' href="https://docs.pageblox.io" target="_blank" rel="noopener noreferrer">
+                <a className='btn block sm:hidden text-white bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm cursor-pointer' href="https://github.com/pageblox-org/pageblox-react" target="_blank" rel="noopener noreferrer">
                   Read Docs
                 </a>
               </div>
