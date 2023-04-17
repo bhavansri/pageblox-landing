@@ -26,7 +26,7 @@ function Hero() {
                 Ship features with faster UX/UI iterations
             </h1>
               <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-                React SDK to collaborate on UX/UI reviews in the browser
+                Open-source react library to collaborate on UX/UI reviews in the browser
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"

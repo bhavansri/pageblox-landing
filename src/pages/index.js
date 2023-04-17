@@ -52,7 +52,7 @@ export default function Home() {
         <Features />
         <Integrations />
         <Features02 />
-        <Faqs />
+        {/* <Faqs /> */}
         <Cta />
       </main>
     </>

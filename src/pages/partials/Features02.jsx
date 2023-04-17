@@ -38,8 +38,8 @@ function Features02() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-hkgrotesk">Built specific for product teams</h2>
+          <div className="max-w-5xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 font-hkgrotesk">Built for every product stakeholder</h2>
           </div>
           {/* Box */}
           <div className="bg-slate-800 bg-opacity-60 rounded overflow-hidden">
@@ -85,32 +85,28 @@ function Features02() {
                 {/* Content */}
                 <div>
                   <div className={`${category !== '1' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Faster review process that helps your team ship on time</h3>
-                    <div className="text-lg text-slate-500">
-                      Reviewing features & fixes usually require a lot of back and forth conversations or finding time to meet.
-                      <br/><br/>
-                      Now, you can manage feedback directly in the app and ship on time.
+                    <h3 className="h3 font-hkgrotesk mb-2">Align on product decisions & ship faster</h3>
+                    <div className="text-lg text-slate-400">
+                      Stop wasting time on lengthy meetings and endless Slack threads. <br/><br/>Use Pageblox to align on decisions and ship faster through a single source of truth.
                     </div>
                   </div>
                   <div className={`${category !== '2' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Ensure front-end changes meet design requirements</h3>
-                    <div className="text-lg text-slate-500">
-                      Design requirements change frequently and prototyping tools can't capture the dynamic states of web apps.
-                      <br/><br/>
-                      Use pageblox to leave iterative feedback and ensure design quality is met on UX/UI changes.
+                    <h3 className="h3 font-hkgrotesk mb-2">Ensure code changes meet design specs</h3>
+                    <div className="text-lg text-slate-400">
+                      Let's face it, design specs change a lot. <br/><br/>Pageblox ensures that code changes meet the latest designs, before they're merged.
                     </div>
                   </div>
                   <div className={`${category !== '3' && 'hidden'}`}>
                     <h3 className="h3 font-hkgrotesk mb-2">Spend less time blocked, more time building</h3>
-                    <div className="text-lg text-slate-500">
-                      A typical product review process costs many hours and prevents the developer from merging their code to production.
+                    <div className="text-lg text-slate-400">
+                      Developers have to wait for design feedback, which slows down the development process.
                       <br /><br />
-                      With a simplified review workflow, developers can get fast turnaround on feedback and ensure they meet the next release cycle.
+                      Pageblox allows for faster feedback loops, so developers can spend less time blocked and more time building.
                     </div>
                   </div>
                   <div className={`${category !== '4' && 'hidden'}`}>
                     <h3 className="h3 font-hkgrotesk mb-2">Communicate changes with clients hassle-free</h3>
-                    <div className="text-lg text-slate-500">
+                    <div className="text-lg text-slate-400">
                       Showing off work to clients and collecting feedback is difficult with timezone differences, e-mail, and managing spreadsheets.
                       <br /><br />
                       Instead, clients can leave their specific design feedback directly on your work as you iterate on development.

@@ -23,12 +23,12 @@ function Integrations() {
   return (
     <section className="relative">
       {/* Bottom vertical line */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-slate-800 flex flex-col lg:flex-row justify-between">
           {/* Section header */}
-          <div className="mx-auto text-center">
-            <h2 className="h4 text-left font-hkgrotesk">Install & use developer-friendly SDK in minutes</h2>
-            <p className="text-xl text-left text-slate-500 my-5">
+          <div className="mx-auto text-center mr-5">
+            <h2 className="h4 text-left font-hkgrotesk">Lightweight, easy-to-install library with documentation</h2>
+            <p className="text-xl text-left text-slate-400 my-5">
               Turn your app into a reviewable interface with just a couple lines of code.
             </p>
             <div className="sm:text-left text-center">

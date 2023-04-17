@@ -15,9 +15,9 @@ function Faqs() {
             <div className="w-full md:w-1/2 space-y-8">
               {/* Item */}
               <div className="space-y-2">
-                <h4 className="text-xl font-hkgrotesk font-medium">What types of codebases do you support?</h4>
+                <h4 className="text-xl font-hkgrotesk font-medium">What if I don't use React?</h4>
                 <p className="text-slate-500">
-                  Currently the SDK works for only React projects. We do however, have plans to support more JavaScript frameworks.
+                  Currently we're focused on react, however there are plans to support more JS frameworks.
                 </p>
               </div>
               {/* Item */}
