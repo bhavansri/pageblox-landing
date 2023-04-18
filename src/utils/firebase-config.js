@@ -1,20 +1,19 @@
-import { initializeApp } from "firebase/app"
-import { getFirestore } from "firebase/firestore"
-import { getAuth } from "firebase/auth"
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAjAfuXwW6EaDf-fi-6LkhpzmHpucpWv0Y",
-  authDomain: "pageblox-server-4c58a.firebaseapp.com",
-  projectId: "pageblox-server-4c58a",
-  storageBucket: "pageblox-server-4c58a.appspot.com",
-  messagingSenderId: "624958838328",
-  appId: "1:624958838328:web:e1d3736fee2fd49b6538cd",
-  measurementId: "G-TS0MBHV5RX"
-}
-
+  apiKey: "AIzaSyAd_Z7ty-pB7bUezEMtDruF_GYWBCfpm7c",
+  authDomain: "pageblox-3637a.firebaseapp.com",
+  projectId: "pageblox-3637a",
+  storageBucket: "pageblox-3637a.appspot.com",
+  messagingSenderId: "708437602502",
+  appId: "1:708437602502:web:8c64a5b759360d267ee7c7",
+  measurementId: "G-BS8MJMCL1B",
+};
 
 // Initialize Firebase
 
-const app = initializeApp(firebaseConfig)
-export const database = getFirestore(app)
-export const auth = getAuth(app)
+const app = initializeApp(firebaseConfig);
+export const database = getFirestore(app);
+export const auth = getAuth(app);
