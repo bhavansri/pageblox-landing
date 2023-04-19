@@ -34,7 +34,7 @@ function Cta() {
           <div className="text-center">
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div data-aos="fade-up" data-aos-delay="100">
-                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup" target="_blank" rel="noopener noreferrer" onClick={onBetaAccess}>
+                <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="https://289qfe92z29.typeform.com/to/LJNGDV6f" target="_blank" rel="noopener noreferrer" onClick={onBetaAccess}>
                   Get Started Free {' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
