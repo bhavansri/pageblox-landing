@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
           `}
       </Script>
       <PagebloxProvider
-        projectId="maX1fU1LnwiquM4vAPZy"
+        projectKey="ePNLS2Blx9hXni9duEE3"
         excludePaths={excludePathsList}
       >
         <Component {...pageProps} />
