@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
+import { PagebloxProvider } from "pageblox-react";
 import * as ga from "../lib/google-analytics";
+import "pageblox-react/dist/index.css";
 import "@/styles/globals.css";
 import "aos/dist/aos.css";
 import "../styles/style.css";
@@ -39,7 +41,12 @@ export default function App({ Component, pageProps }) {
             });
           `}
       </Script>
-      <Component {...pageProps} />
+      <PagebloxProvider
+        projectKey="ePNLS2Blx9hXni9duEE3"
+        excludePaths={excludePathsList}
+      >
+        <Component {...pageProps} />
+      </PagebloxProvider>
     </>
   );
 }
