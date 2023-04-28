@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 // Import Swiper
 import Swiper, { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
-import Image from 'next/image';
 Swiper.use([Autoplay, Navigation]);
 
 function Features() {
@@ -47,12 +46,12 @@ function Features() {
           {/* Section header */}
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between pb-6 md:pb-10">
             <div className='text-slate-300 pr-5 mb-8 md:w-1/2'>
-              <h2 className="h4 md:h2 font-hkgrotesk mb-4 text-left">Accelerate your UX/UI review workflows</h2>
-              <p className="text md:text-lg text-slate-400">
-                Reviewing UX/UI code changes is hard. It's an inefficient process that often results in launch delays & uncaught buggy code. 
+              <h2 className="h4 md:h2 font-hkgrotesk mb-4 text-left">Build features with less bugs and on time!</h2>
+              <p className="text text-slate-400">
+                Getting your front-end code reviewed is a painful process. It requires a lot of back-and-forth between product stakeholders, involving a lot of screenshots, emails, and meetings.
               </p>
-              <p className="text md:text-lg text-slate-400 mt-5">
-                Pageblox solves this by creating a single review interface, reducing the back-and-forth in the review process between stakeholders and developers.
+              <p className="text text-slate-400 mt-5">
+                Pageblox solves this by allowing stakeholders to review code changes in a visual way, without having to leave the browser. It's collaborative & real-time, so you can get feedback and iterate faster.
               </p>
             </div>
             <div className="text-md md:text-lg text-slate-300">

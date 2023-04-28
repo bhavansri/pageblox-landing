@@ -28,7 +28,7 @@ function Cta() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-            <h2 className="h2 font-hkgrotesk">Ship features with faster UX/UI iterations</h2>
+            <h2 className="h2 font-hkgrotesk">Faster UX/UI reviews for code changes</h2>
           </div>
           {/* Buttons */}
           <div className="text-center">

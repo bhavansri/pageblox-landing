@@ -27,9 +27,9 @@ function Integrations() {
         <div className="py-12 md:py-20 border-t border-slate-800 flex flex-col lg:flex-row justify-between">
           {/* Section header */}
           <div className="mx-auto text-center mr-5">
-            <h2 className="h4 text-left font-hkgrotesk">Lightweight, easy-to-install library with documentation</h2>
+            <h2 className="h4 text-left font-hkgrotesk">Get started with just a few lines of code</h2>
             <p className="text-xl text-left text-slate-400 my-5">
-              Turn your app into a reviewable interface with just a couple lines of code.
+              Open-source library with documentation and examples for integrating into any react project.
             </p>
             <div className="sm:text-left text-center">
               <a className="font-medium text-indigo-500 inline-flex items-center transition duration-150 ease-in-out group" href="https://github.com/pageblox-org/pageblox-react" target="_blank" rel="noopener noreferrer">

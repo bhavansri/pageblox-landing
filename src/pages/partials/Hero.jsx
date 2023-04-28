@@ -22,11 +22,11 @@ function Hero() {
         <div className="pt-32 md:pt-40">
           {/* Hero content */}
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
-                Ship features with faster UX/UI iterations
-            </h1>
+            <h2 className="h2 font-hkgrotesk mb-6" data-aos="fade-up">
+                Faster UX/UI reviews for code changes
+            </h2>
               <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-                Open-source react library to review UX/UI code changes in the browser
+                Ship front-end code faster with a simplified review process
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"

@@ -9,14 +9,12 @@ import Image from 'next/image';
 
 const CategoryImage = ({ category }) => {
   switch (category) {
-      case '1':
-        return <Image src={Workflow} className="md:max-w-none p-5" width="300" height="320" alt="Workflow Icon" />
-      case '2':
-      return <Image src={ProductDesign} className="md:max-w-none p-5" width="300" height="320" alt="Product Design Icon" />
-    case '3':
+    case '1':
       return <Image src={WebDevelopment} className="md:max-w-none p-5" width="300" height="320" alt="Web Development Icon" />
-    case '4':
-      return <Image src={Freelancer} className="md:max-w-none p-5" width="350" height="330" alt="Freelancer Icon" />
+    case '2':
+        return <Image src={Workflow} className="md:max-w-none p-5" width="300" height="320" alt="Workflow Icon" />
+      case '3':
+      return <Image src={ProductDesign} className="md:max-w-none p-5" width="300" height="320" alt="Product Design Icon" />
   }
 }
 
@@ -39,7 +37,7 @@ function Features02() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-5xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-hkgrotesk">Built for every product stakeholder</h2>
+            <h2 className="h2 font-hkgrotesk">Real-time collaboration tool designed for every stakeholder</h2>
           </div>
           {/* Box */}
           <div className="bg-slate-800 bg-opacity-60 rounded overflow-hidden">
@@ -48,13 +46,13 @@ function Features02() {
                 {/* Filters */}
                 <div className="mb-6 lg:mb-8">
                   <div className="flex flex-wrap -m-1.5">
-                    <button
+                  <button
                       className={`btn-sm px-3 py-1 shadow-sm rounded-full m-1.5 ${
                         category === '1' ? 'text-white bg-indigo-500' : 'text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600'
                       }`}
                       onClick={() => setCategory('1')}
                     >
-                      Product Managers
+                      Software Engineers
                     </button>
                     <button
                       className={`btn-sm px-3 py-1 shadow-sm rounded-full m-1.5 ${
@@ -62,7 +60,7 @@ function Features02() {
                       }`}
                       onClick={() => setCategory('2')}
                     >
-                      Designers
+                      Product Managers
                     </button>
                     <button
                       className={`btn-sm px-3 py-1 shadow-sm rounded-full m-1.5 ${
@@ -70,46 +68,28 @@ function Features02() {
                       }`}
                       onClick={() => setCategory('3')}
                     >
-                      Engineers
-                    </button>
-                    <button
-                      className={`btn-sm px-3 py-1 shadow-sm rounded-full m-1.5 ${
-                        category === '4' ? 'text-white bg-indigo-500' : 'text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600'
-                      }`}
-                      onClick={() => setCategory('4')}
-                    >
-                      Freelancers
+                      Designers
                     </button>
                   </div>
                 </div>
                 {/* Content */}
                 <div>
                   <div className={`${category !== '1' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Align on product decisions & ship faster</h3>
-                    <div className="text-lg text-slate-400">
-                      Stop wasting time on lengthy meetings and endless Slack threads. <br/><br/>Use Pageblox to align on decisions and ship faster through a single source of truth.
+                    <h3 className="h3 font-hkgrotesk mb-2">Spend less time blocked, more time building</h3>
+                    <div className="text-lg text-slate-400 pt-5">
+                      Reduce the time it takes to review front-end changes, so you can meet release deadlines stress-free.
                     </div>
                   </div>
                   <div className={`${category !== '2' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Ensure code changes meet design specs</h3>
-                    <div className="text-lg text-slate-400">
-                      Let's face it, design specs change a lot. <br/><br/>Pageblox ensures that code changes meet the latest designs, before they're merged.
+                    <h3 className="h3 font-hkgrotesk mb-2">Improve documentation & communication of caught issues</h3>
+                    <div className="text-lg text-slate-400 mt-5">
+                      Our tool helps product managers ensure everyone's aligned on high-priority issues and decisions made.
                     </div>
                   </div>
                   <div className={`${category !== '3' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Spend less time blocked, more time building</h3>
-                    <div className="text-lg text-slate-400">
-                      Developers have to wait for design feedback, which slows down the development process.
-                      <br /><br />
-                      Pageblox allows for faster feedback loops, so developers can spend less time blocked and more time building.
-                    </div>
-                  </div>
-                  <div className={`${category !== '4' && 'hidden'}`}>
-                    <h3 className="h3 font-hkgrotesk mb-2">Communicate changes with clients hassle-free</h3>
-                    <div className="text-lg text-slate-400">
-                      Showing off work to clients and collecting feedback is difficult with timezone differences, e-mail, and managing spreadsheets.
-                      <br /><br />
-                      Instead, clients can leave their specific design feedback directly on your work as you iterate on development.
+                    <h3 className="h3 font-hkgrotesk mb-2">Ensure code changes meet design specs</h3>
+                    <div className="text-lg text-slate-400 mt-5">
+                      Designs change frequently during the development process, so our review tool makes sure it's easy to call out discrepancies.
                     </div>
                   </div>
                 </div>
